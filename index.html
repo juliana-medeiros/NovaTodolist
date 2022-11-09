@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="logo.png" alt="" width="270px">
+    </div>
+    
+    <div class="container">
+        <div id="titulo">
+            <h3 id="titulo">To Do <br> List <br> </h3> 
+            <button id="bt1"> <a href="#texto">Crie a sua aqui</a></button>
+        </div>
+        <div id="img">
+            <img src="imagem-list.svg" width="660px" height="500px">
+        </div> 
+    </div>
+
+    <div class="parte-lista">
+        <div class="container2">
+            <h1 class="subtitulo"> Adicionar Elementos na Lista</h1>
+            <input type="text" id="texto" placeholder="Digite uma tarefa">
+            
+            <button id="bt2" onclick="adicionar()"> + </button>
+        </div>
+        <div id="tarefas">
+
+        </div>
+    </div>
+    <footer class="rodape">
+        <p>Juliana Vieira e Beatriz Lima INF261</p>
+    </footer>
+
+    <script>
+        function adicionar()
+        {
+            const conteudo = document.getElementById('texto').value;
+            const novoP = document.createElement('h3');
+            novoP.innerHTML = conteudo;
+            const novoBotao = document.createElement('button');
+            novoBotao.innerHTML = 'excluir';
+
+
+            novoP.addEventListener('click', function(){
+                novoP.style.color = "blue"
+                novoP.style.textDecoration = "line-through";
+            })
+
+            novoBotao.addEventListener('click', function(){
+                novoP.remove();
+                novoBotao.remove();
+            })
+
+            document.getElementById('tarefas').appendChild(novoP);
+            document.getElementById('tarefas').appendChild(novoBotao);
+
+            //Esvaziando o input automaticamente após adicionar a tarefa
+            document.getElementById('texto').value = "";
+
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+    margin: auto;
+    
+}
+.menu{
+    background-color:#83C5BE;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.menu img{
+    padding-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    padding-left: 15vh;
+    background-color: #dde5e7ec;
+    padding-bottom: 15vh;
+    padding-top: 10vh;
+}
+
+
+#titulo{
+    font-size: 12vh;
+    margin-right: 30px;
+    padding-top: 5%;
+}
+
+
+#bt1{
+    padding: 15px;
+    font-size: 15px;
+    font-family: sans-serif bold;
+    border-radius: 20px;
+    background-color: #83C5BE;
+    color: #fff;
+}
+
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.parte-lista{
+    background-color: #a3a19fd2;
+    padding-top: 15%;   
+    padding-bottom: 15%;
+}
+
+.container2{
+    max-width: 900px;
+    top: 50%;
+    left:50%;
+    padding: 40px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15PX;
+    background-color: #0d7e88c0;
+    box-shadow: rgba(0, 0, 0, 0.027) 0px 5px 15px;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.container2 input{
+    border-radius: 12px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #191818;
+    width: 500px;
+    background: #191818;
+    color: #fff;
+    
+}
+
+#bt2{
+    width: 45px;
+    margin-top: 5px;
+    font-size: 18px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: #fff;
+    outline: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 15px;
+}
+
+#tarefas{
+    background-color: #83c5bfb2;
+    max-width: 900px;
+    color: #000;
+    height: auto;
+    padding: 30px;
+    margin-left: 30vh;
+    border-radius: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+
+#tarefas button{
+    border-radius: 6px;
+    padding: 2px;
+    width: 85px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: #fff;
+    outline: none;
+    border-radius: 12px;
+}
+
+.rodape{
+    background-color: #83C5BE;
+    padding: 20px;
+    text-align: center;
+    font-family: poppins bold;
+    font-size: 18px;
+}
