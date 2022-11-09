@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="login.js">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
     <section class="container">
@@ -16,31 +16,31 @@
         <form  class="form">
             <div class="input-box">
                 <label for="firstname">Nome:</label>
-                <input type="text" id="nome" class="box-nome" placeholder="digite seu nome" required>
+                <input type="text" id="nome" class="box-nome" placeholder="digite seu nome" required oninput="validarNome()">
                 <br>
                 <span class="span">Deve conter no mínimo 10 caracteres</span>
             </div>
             <div class="input-box">
                 <label for="username">Login:</label>
-                <input type="text" id="login" class="box-login" placeholder="Digite seu nome de usuário" required>
+                <input type="text" id="login" class="box-login" placeholder="Digite seu nome de usuário" required oninput="validarLogin()">
                 <br>
-                <span class="span">Deve conter no máximo 10 linhas</span>
+                <span class="span">Deve conter no máximo 10 caracteres</span>
             </div>
             <div class="input-box">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" class="box-email" placeholder="Digite seu email" required>
+                <input type="email" id="email" class="box-email" placeholder="Digite seu email" required oninput="validarEmail()">
                 <br>
                 <span class="span">Insira um email válido</span>
             </div>
             <div class="input-box">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" class="box-senha" placeholder="Digite sua senha" required>
+                <input type="password" id="senha" class="box-senha" placeholder="Digite sua senha" required oninput="compararSenha()">
                 <br>
                 <span class="span">As senhas devem ser iguais!</span>
             </div>
             <div class="input-box">
                 <label for="confirmsenha">Confirme sua senha:</label>
-                <input type="confirmPassword" id="confirmsenha" class="box-confirmsenha" placeholder="Confirme sua senha" required>
+                <input type="confirmPassword" id="confirmsenha" class="box-confirmsenha" placeholder="Confirme sua senha" required oninput="compararSenha()">
                 <br>
                 <span class="span">As senhas devem ser iguais!</span>
             </div>
@@ -49,5 +49,6 @@
             </div>
         </form>
     </section>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>

@@ -29,3 +29,36 @@ function entrar() {
         window.location.href = "index.html"
     }
 }
+
+function validarNome() {
+    if (nome.value == ""){
+        span[0].style.display = "none";
+    }
+    else if (nome.value.length < 10){
+        nome.style.border="3px solid #A72608";
+        span[0].style.display = "block";
+    }
+    else{
+        nome.style.border="3px solid #004E98";
+        span[0].style.display = "none";
+        var nomeSave = document.querySelector("#nome").value;
+        localStorage.setItem('nome', nomeSave);
+    }
+}
+
+function validarLogin() {
+    if (login.value == ""){
+        span[1].style.display = "none";
+    }
+    else if (login.value.length > 10){
+        login.style.border = "3px solid #A72608";
+        span[1].style.display = "block";
+    }
+    else{
+        login.style.border = "3px solid #004e98";
+        span[1].style.display = "none";
+        var loginSave = document.querySelector("#login").value
+        localStorage.setItem('login', loginSave)
+    }
+}
+
