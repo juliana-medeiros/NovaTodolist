@@ -73,7 +73,8 @@ function validarEmail() {
     else {
         email.style.border = "3px solid #004e98"
         sapn[2].style.display = "none";
-        var emailSave.setItem ('email', emailSave);
+        var emailSave = document.querySelector("#email").value;
+        localStorage.setItem('email', emailSave);
     }
 }
 
@@ -87,7 +88,7 @@ function compararSenha() {
         confirmsenha.style.border = "3px solid #A72608";
         span[3].style.display = "none";
         span[4].style.display = "none";
-        var senhaSave = document.querySelector(#senha).value;
+        var senhaSave = document.querySelector("#senha").value;
         localStorage.setItem('senha', senhaSave)
     }
     else {
