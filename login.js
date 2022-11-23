@@ -84,16 +84,16 @@ function compararSenha() {
         span[4].style.border.display = "none";
     }
     else if (senha.value == confirmsenha.value) {
-        senha.style.border = "3px solid #A72608";
-        confirmsenha.style.border = "3px solid #A72608";
+        senha.style.border = "3px solid #004e98";
+        confirmsenha.style.border = "3px solid #004e98";
         span[3].style.display = "none";
         span[4].style.display = "none";
         var senhaSave = document.querySelector("#senha").value;
         localStorage.setItem('senha', senhaSave)
     }
     else {
-        senha.style.border = "3px solid #004e98";
-        confirmsenha.style.border = "3px solid #004e98";
+        senha.style.border = "3px solid #A72608";
+        confirmsenha.style.border = "3px solid #A72608";
         span[3].style.display = "block";
         span[4].style.display = "block";
     }
