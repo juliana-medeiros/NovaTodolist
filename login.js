@@ -5,7 +5,6 @@ document.addEventListener("keypress", function(e){
     }
 });
 
-const form = document.getElementById('form');
 const nome = document.getElementById('nome');
 const login = document.getElementById('login');
 const email = document.getElementById('email');
@@ -18,17 +17,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 })
 
-function entrar() {
-    if(nome.value, login.value, email.value, senha.value, confirmsenha.value == ""){
-
-    }
-    else if (nome.value.length < 10, login.value.length > 10, !emailRegex.test(email.value), senha.value != confirmsenha.value){
-
-    }
-    else{
-        window.location.href = "index.html"
-    }
-}
 
 function validarNome() {
     if (nome.value == ""){
@@ -98,4 +86,16 @@ function compararSenha() {
         span[4].style.display = "block";
     }
 }
+
+function logar() {
+    if(nome.value, login.value, email.value, senha.value, confirmsenha.value == ""){
+
+    }
+    else if (nome.value.length < 10, login.value.length > 10, !emailRegex.test(email.value), senha.value != confirmsenha.value){
+
+    }
+    else{
+        window.location.href = "index.html"
+    }
+};
 
