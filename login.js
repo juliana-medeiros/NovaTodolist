@@ -17,7 +17,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 })
 
-
 function validarNome() {
     if (nome.value == ""){
         span[0].style.display = "none";
@@ -60,7 +59,7 @@ function validarEmail() {
     }
     else {
         email.style.border = "3px solid #004e98"
-        sapn[2].style.display = "none";
+        span[2].style.display = "none";
         var emailSave = document.querySelector("#email").value;
         localStorage.setItem('email', emailSave);
     }
